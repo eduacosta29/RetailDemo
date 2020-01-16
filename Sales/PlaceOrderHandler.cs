@@ -15,10 +15,10 @@ namespace Sales
         public Task Handle(PlaceOrder message, IMessageHandlerContext context)
         {
             log.Info($"Received PlaceOrder, OrderId = {message.OrderId}");
-            if (random.Next(0, 5) == 0)
-            {
-                throw new Exception("Oops");
-            }
+            //if (random.Next(0, 5) == 0)
+            //{
+            //    throw new Exception("Oops");
+            //}
             var orderPlaced = new OrderPlaced
             {
                 OrderId = message.OrderId

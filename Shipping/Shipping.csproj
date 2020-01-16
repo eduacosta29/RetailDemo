@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="OrderBilledHandler.cs" />
+    <Compile Remove="OrderPlacedHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NServiceBus" Version="7.2.0" />
   </ItemGroup>
 
