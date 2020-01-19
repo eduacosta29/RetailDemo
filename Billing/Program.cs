@@ -11,8 +11,21 @@ namespace Billing
             Console.Title = "Billing";
 
             var endpointConfiguration = new EndpointConfiguration("Billing");
+            var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
+            transport.UseConventionalRoutingTopology();
+            transport.ConnectionString("host=localhost;username=guest;password=guest");
+            endpointConfiguration.EnableInstallers();
+            endpointConfiguration.SendFailedMessagesTo("error");
+            endpointConfiguration.AuditProcessedMessagesTo("audit");
 
-            var transport = endpointConfiguration.UseTransport<LearningTransport>();
+            var metrics = endpointConfiguration.EnableMetrics();
+
+            metrics.SendMetricDataToServiceControl(
+                serviceControlMetricsAddress: "Particular.Monitoring",
+                interval: TimeSpan.FromSeconds(2)
+            );
+          
+           
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);

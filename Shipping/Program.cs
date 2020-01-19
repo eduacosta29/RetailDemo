@@ -11,8 +11,22 @@ namespace Shipping
             Console.Title = "Shipping";
 
             var endpointConfiguration = new EndpointConfiguration("Shipping");
+            var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
+            transport.UseConventionalRoutingTopology();
+            transport.ConnectionString("host=localhost;username=guest;password=guest");
+            endpointConfiguration.EnableInstallers();
 
-            var transport = endpointConfiguration.UseTransport<LearningTransport>();
+            endpointConfiguration.SendFailedMessagesTo("error");
+            endpointConfiguration.AuditProcessedMessagesTo("audit");
+
+            var metrics = endpointConfiguration.EnableMetrics();
+
+            metrics.SendMetricDataToServiceControl(
+                serviceControlMetricsAddress: "Particular.Monitoring",
+                interval: TimeSpan.FromSeconds(2)
+            );
+        
+
             endpointConfiguration.UsePersistence<InMemoryPersistence>();
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)

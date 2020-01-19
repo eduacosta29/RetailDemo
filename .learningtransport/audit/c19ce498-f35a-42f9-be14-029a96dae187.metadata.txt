@@ -1,0 +1,23 @@
+{
+  "NServiceBus.MessageId": "34c0aa5f-7fe8-4fd3-9a9a-ab47011e7790",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "7a39bfbd-b33a-4dcc-8c7a-ab47011e5ee3",
+  "NServiceBus.ConversationId": "e5cc6a57-7977-44f0-9759-ab47011e5e91",
+  "NServiceBus.CorrelationId": "ab51d6d5-25ec-4ba5-b83f-ab47011e5e87",
+  "NServiceBus.OriginatingMachine": "DESKTOP-6B9LUNR",
+  "NServiceBus.OriginatingEndpoint": "Sales",
+  "$.diagnostics.originating.hostid": "dcee1f74e32fff252aa65d96a1625b6b",
+  "NServiceBus.OriginatingSagaId": "5a474c51-fe83-4181-94e3-ab47011e5ed9",
+  "NServiceBus.OriginatingSagaType": "Sales.BuyersRemorsePolicy, Sales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.ReplyToAddress": "Sales",
+  "NServiceBus.ContentType": "text\/xml",
+  "NServiceBus.EnclosedMessageTypes": "Messages.OrderPlaced, Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "7.2.0",
+  "NServiceBus.TimeSent": "2020-01-19 17:22:59:676698 Z",
+  "NServiceBus.ProcessingStarted": "2020-01-19 17:22:59:729762 Z",
+  "NServiceBus.ProcessingEnded": "2020-01-19 17:22:59:744059 Z",
+  "$.diagnostics.hostid": "eb235324aa8f8ffcd6c541563ddd4515",
+  "$.diagnostics.hostdisplayname": "DESKTOP-6B9LUNR",
+  "NServiceBus.ProcessingMachine": "DESKTOP-6B9LUNR",
+  "NServiceBus.ProcessingEndpoint": "Shipping"
+}

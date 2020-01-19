@@ -1,0 +1,9 @@
+{
+  "NServiceBus.OriginatingEndpoint": "Billing",
+  "NServiceBus.OriginatingMachine": "DESKTOP-6B9LUNR",
+  "$.diagnostics.originating.hostid": "323257485014b4a7ba5c8e76e1b3bea3",
+  "$.diagnostics.hostdisplayname": "DESKTOP-6B9LUNR",
+  "NServiceBus.ContentType": "TaggedLongValueWriterOccurrence",
+  "NServiceBus.Metric.Type": "ProcessingTime",
+  "NServiceBus.Transport.Learning.TimeToBeReceived": "7.00:00:00"
+}

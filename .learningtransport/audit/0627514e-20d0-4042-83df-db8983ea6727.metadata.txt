@@ -1,0 +1,20 @@
+{
+  "NServiceBus.MessageId": "ab51d6d5-25ec-4ba5-b83f-ab47011e5e87",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.ConversationId": "e5cc6a57-7977-44f0-9759-ab47011e5e91",
+  "NServiceBus.CorrelationId": "ab51d6d5-25ec-4ba5-b83f-ab47011e5e87",
+  "NServiceBus.OriginatingMachine": "DESKTOP-6B9LUNR",
+  "NServiceBus.OriginatingEndpoint": "ClientUI",
+  "$.diagnostics.originating.hostid": "c92d8ffb23d2ba1eee60fa3a0fd480a4",
+  "NServiceBus.ReplyToAddress": "ClientUI",
+  "NServiceBus.ContentType": "text\/xml",
+  "NServiceBus.EnclosedMessageTypes": "Messages.PlaceOrder, Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "7.2.0",
+  "NServiceBus.TimeSent": "2020-01-19 17:22:38:391348 Z",
+  "NServiceBus.ProcessingStarted": "2020-01-19 17:22:38:469864 Z",
+  "NServiceBus.ProcessingEnded": "2020-01-19 17:22:38:678917 Z",
+  "$.diagnostics.hostid": "dcee1f74e32fff252aa65d96a1625b6b",
+  "$.diagnostics.hostdisplayname": "DESKTOP-6B9LUNR",
+  "NServiceBus.ProcessingMachine": "DESKTOP-6B9LUNR",
+  "NServiceBus.ProcessingEndpoint": "Sales"
+}
